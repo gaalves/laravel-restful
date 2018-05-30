@@ -15,12 +15,12 @@ class CreateAccountsTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->increments('id');
-            $table->increments('title', 45);
-            $table->increments('agency');
-            $table->increments('account_number');
-            $table->increments('balance',11,2);
-            $table->increments('balance_initial', 11, 2);
-            $table->increments('bank_id');
+            $table->string('title', 45);
+            $table->integer('agency');
+            $table->integer('account_number');
+            $table->decimal('balance', 11, 2);
+            $table->decimal('balance_initial', 11,2);
+            $table->integer('bank_id');
             $table->timestamps();
         });
     }
