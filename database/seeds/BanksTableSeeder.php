@@ -1,6 +1,8 @@
 <?php
+
 use Illuminate\Database\Seeder;
-class BankSeeder extends Seeder
+
+class BanksTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
